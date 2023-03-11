@@ -3,7 +3,8 @@ class transaction;
   rand logic[7:0] coin_in;
   rand logic[1:0] button_in;
 
-  constraint coin_in_constraint {coin_in inside {0, 10, 20, 50, 100, 200};}
+  constraint coin_in_constraint1 {coin_in inside {0, 10, 20, 50, 100, 200};}
+  constraint coin_in_constraint2 {coin_in dist {0 := 60, 10 := 8, 20 := 8, 50 := 8, 100 := 8, 200 := 8};}
   constraint button_in_constraint {button_in inside {0, 1, 2};}
 
   //post-randomize function, displaying randomized values of items 

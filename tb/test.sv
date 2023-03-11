@@ -18,7 +18,7 @@ program test(vending_intf intf);
         my_tr = new();
 
         //setting the repeat count of the generator
-        env.gen.repeat_count = 50;
+        env.gen.repeat_count = 100;
 
         env.gen.trans = my_tr;
 

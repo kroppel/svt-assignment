@@ -1,0 +1,14 @@
+<harm>
+	<context name="default">
+
+		<prop exp="coin_in" loc="a, dt"/>
+		<prop exp="button_in" loc="a, dt"/>
+		<prop exp="change_out" loc="c"/>
+		<prop exp="beverage_out" loc="c"/>
+
+		<template dtLimits="2D,3W,3A,0.2E,R,N" exp="G({..#1&..}|-> (P0))" />
+
+		<sort name="causality" exp="1-afct/traceLength"/>
+		<sort name="frequency" exp="atct/traceLength"/>
+	</context>
+</harm>
